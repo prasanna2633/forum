@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7c9c4ff466.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <form name="myForm" id="form" onsubmit="return validateForm()">
+                <div><h1>registration form</h1></div>
+                <div>
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" class="inputs" id="name1" placeholder="enter first name" size="10" required>
+                    <i class="fa-regular fa-face-frown"></i>
+                    <i class="fa-regular fa-face-smile"></i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" class="inputs" id="name2" placeholder="enter second name" required>
+                    <i class="fa-regular fa-face-frown"></i>
+                    <i class="fa-regular fa-face-smile"></i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <input type="number" class="inputs" id="num" name="num" placeholder="enter your number"
+                        pattern="[0-9]{10}" minlength ="10" size="10" required>
+
+                    <i class="fa-regular fa-face-frown"></i>
+                    <i class="fa-regular fa-face-smile"></i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" class="inputs" name="" id="pass1" placeholder="enter your password" required
+                        minlength="8">
+                    <i class="fa-regular fa-face-frown"></i>
+                    <i class="fa-regular fa-face-smile"></i>
+                </div>
+                <div> <i class="fa-solid fa-lock"></i>
+                    <input type="password" name="" id="pass2" class="inputs" placeholder="confirm your password"
+                        required minlength="8"><i class="fa-regular fa-face-frown"></i><i
+                        class="fa-regular fa-face-smile"></i>
+                </div>
+                <input type="submit" id="submit" value="submit">
+
+            </form>
+
+        </div>
+
+
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>

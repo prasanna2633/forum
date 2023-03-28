@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&family=Raleway:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid rgb(236, 8, 8); */
+    text-transform: capitalize;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+section {
+
+    background: url(./SL_060521_43530_09.jpg);
+
+    background-position: center;
+
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    overflow: auto;
+
+}
+
+.container {
+    height: 70%;
+    width: 25%;
+    background-color: rgba(113, 106, 106, 0.433);
+    box-shadow: 0 8px 32px 0 rgba(255, 252, 252, 0.37);
+    margin: 15vh auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1em;
+
+}
+
+h1 {
+    text-align: center;
+    /* text-transform: uppercase; */
+    color: #fcba04;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+form {
+
+    height: 95%;
+    width: 95%;
+    /* background-color: aqua; */
+    padding: 0 25px;
+}
+
+div {
+    position: relative;
+    margin: 5px 0;
+}
+
+.inputs {
+    border-radius: 5px;
+    width: 100%;
+    height: 2em;
+    font-size: 17px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 20px 0;
+    padding-left: 35px;
+    outline: none;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.959);
+
+}
+
+.inputs.sucess input {
+    border-color: #2ecc71;
+}
+
+.inputs.error input {
+    border-color: #fd0505;
+}
+
+
+
+
+#submit {
+    background-color: #fbb90a;
+    text-align: center;
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    height: 2em;
+    font-size: 17px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+input:hover {
+    background-color: rgb(241, 158, 57);
+    border: none;
+}
+
+.fa-solid {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.fa-regular {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+/* color change validation */
+.fa-face-smile {
+    display: none;
+    color: #03fe6b;
+    margin-left: 5px;
+  }
+  
+  .fa-face-frown {
+    display:hidden;
+    color: #fd0505;
+    margin-left: 5px;
+  }
+  
+  input:valid + .fa-face-smile {
+    display: inline-block;
+  }
+  
+  input:invalid + .fa-face-frown {
+    display: inline-block;
+  }
+  
+  input:valid {
+    border: 2px solid green;
+    box-shadow: 1px 1px 30px green;
+  }
+  
+  input:invalid {
+    border: 2px solid red;
+    box-shadow: 1px 1px 10px rgb(243, 8, 8);
+  }
+  
